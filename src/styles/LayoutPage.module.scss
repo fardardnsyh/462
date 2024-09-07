@@ -1,0 +1,32 @@
+@import './constants.scss';
+
+.layout {
+    background-color: $white;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.header {
+    background-color: $white;
+}
+
+.content {
+    margin: 3rem auto 0;
+    padding: 1.5rem 50px;
+    width: 100%;
+}
+
+.footer {
+    background-color: $white;
+    margin-top: 15rem;
+}
+
+@media screen and (max-width: 576px) {
+
+    .header,
+    .content,
+    .footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

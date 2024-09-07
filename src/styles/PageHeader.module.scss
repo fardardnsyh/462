@@ -1,0 +1,47 @@
+@import './constants.scss';
+
+.container {
+    align-items: center;
+    display: flex;
+
+    .menu {
+        background-color: $white;
+        font-size: 1.2rem;
+        justify-content: center;
+        width: 100%;
+
+        li:nth-child(even) {
+            cursor: default;
+            padding: 0;
+        }
+    }
+
+    .isMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        border-bottom: 1px solid $gray;
+    }
+
+    .menu {
+        display: none !important;
+    }
+
+    .isMobile {
+        display: block !important;
+    }
+
+    .menuIsMobile {
+        border-inline-end: 0 !important;
+        font-size: 1.2rem;
+        justify-content: center;
+        width: 100%;
+
+        li:nth-child(even) {
+            display: none !important;
+        }
+    }
+}

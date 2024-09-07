@@ -1,0 +1,11 @@
+@import 'antd/dist/reset.css';
+@import './constants.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: $roboto-mono;
+}
+
+html {
+    background-color: $white;
+}
